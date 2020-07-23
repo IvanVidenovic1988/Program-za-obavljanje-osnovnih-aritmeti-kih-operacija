@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    var a = prompt("Unesi broj");
+    var operation = prompt("Unesi racunsku operaciju");
+    var b = prompt("Unesi broj");
+
+    function calculator() {
+      let result;
+
+      if (operation === '+') {
+        result = parseInt(a) + parseInt(b)
+        console.log(a, b);
+      }
+      if (operation === '-') {
+        result = parseInt(a) - parseInt(b)
+      }
+      if (operation === '*') {
+        result = parseInt(a) * parseInt(b)
+      }
+      if (operation === '/') {
+        result = parseInt(a) / parseInt(b)
+      }
+      alert("Rezlutat je: " + result);
+    }
+
+    calculator()
+    
+  </script>
+</body>
+
+</html>
